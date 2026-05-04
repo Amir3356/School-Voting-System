@@ -118,10 +118,13 @@ export default function Results() {
                   <div key={result.candidate_id} className="border-b pb-4">
                     <div className="flex justify-between items-center mb-2">
                       <div>
-                        <h3 className="text-lg font-semibold">Candidate {index + 1}</h3>
+                        <h3 className="text-lg font-semibold">
+                          {index + 1}. {result.name}
+                        </h3>
+                        <p className="text-gray-600">{result.position}</p>
                       </div>
                       <div className="text-right">
-                        <p className="text-2xl font-bold text-blue-600">{result.vote_count}</p>
+                        <p className="text-2xl font-bold text-blue-600">{result.votes}</p>
                         <p className="text-sm text-gray-600">votes</p>
                       </div>
                     </div>
